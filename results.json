@@ -1,0 +1,354 @@
+{
+  "schema_version": 1,
+  "source_sha256": "4e8c418009628703289b5ee3ca3a8bf581e1b3a52634a73ecb274af76ac89fd6",
+  "scope": "SAW-only educational research; production forecasting rejected",
+  "intended_horizon": "next wafer on same tool/blade h=1; not observable",
+  "split": {
+    "counts": {
+      "fit": 10000,
+      "evaluation": 4000,
+      "selection": 2000,
+      "calibration": 2000,
+      "decision": 2000
+    },
+    "seed": 42,
+    "Lot_overlap": 0,
+    "Wafer_overlap": 0,
+    "type": "stratified singleton-Lot cross-sectional; NOT chronological"
+  },
+  "conditional_benchmark": {
+    "constant": {
+      "evaluation": {
+        "n": 4000,
+        "fail_count": 273,
+        "threshold": 1.0000000000000002,
+        "average_precision": 0.06825,
+        "roc_auc": 0.5,
+        "brier": 0.06359194,
+        "fail_precision": 0.0,
+        "fail_recall": 0.0,
+        "fail_f1": 0.0,
+        "accuracy": 0.93175,
+        "review_fraction": 0.0,
+        "tn": 3727,
+        "fp": 0,
+        "fn": 273,
+        "tp": 0,
+        "assumed_cost_5fn_1fp": 1365,
+        "false_positive_rate": 0.0,
+        "false_alarms_per_1000_rows": 0.0
+      },
+      "CI95": {
+        "roc_auc": {
+          "low": 0.5,
+          "high": 0.5,
+          "resamples": 500,
+          "method": "paired singleton-Lot percentile; fitted-model conditional"
+        },
+        "average_precision": {
+          "low": 0.0605,
+          "high": 0.07513125,
+          "resamples": 500,
+          "method": "paired singleton-Lot percentile; fitted-model conditional"
+        },
+        "brier": {
+          "low": 0.056900589999999994,
+          "high": 0.06953321124999999,
+          "resamples": 500,
+          "method": "paired singleton-Lot percentile; fitted-model conditional"
+        },
+        "recall": {
+          "low": 0.0,
+          "high": 0.0,
+          "resamples": 500,
+          "method": "paired singleton-Lot percentile; fitted-model conditional"
+        },
+        "false_positive_rate": {
+          "low": 0.0,
+          "high": 0.0,
+          "resamples": 500,
+          "method": "paired singleton-Lot percentile; fitted-model conditional"
+        }
+      },
+      "AP_delta_vs_constant_CI95": {
+        "low": 0.0,
+        "high": 0.0,
+        "resamples": 500,
+        "method": "paired singleton-Lot percentile; fitted-model conditional"
+      }
+    },
+    "logistic": {
+      "evaluation": {
+        "n": 4000,
+        "fail_count": 273,
+        "threshold": 0.07146621126326512,
+        "average_precision": 0.07528183416906403,
+        "roc_auc": 0.5107408466678657,
+        "brier": 0.06358063498030131,
+        "fail_precision": 0.10480349344978165,
+        "fail_recall": 0.08791208791208792,
+        "fail_f1": 0.09561752988047809,
+        "accuracy": 0.8865,
+        "review_fraction": 0.05725,
+        "tn": 3522,
+        "fp": 205,
+        "fn": 249,
+        "tp": 24,
+        "assumed_cost_5fn_1fp": 1450,
+        "false_positive_rate": 0.055004024684733026,
+        "false_alarms_per_1000_rows": 51.25
+      },
+      "CI95": {
+        "roc_auc": {
+          "low": 0.4757018509158211,
+          "high": 0.5480542806435806,
+          "resamples": 500,
+          "method": "paired singleton-Lot percentile; fitted-model conditional"
+        },
+        "average_precision": {
+          "low": 0.06361582829608321,
+          "high": 0.09335244951030881,
+          "resamples": 500,
+          "method": "paired singleton-Lot percentile; fitted-model conditional"
+        },
+        "brier": {
+          "low": 0.0568990727239687,
+          "high": 0.0695226113206935,
+          "resamples": 500,
+          "method": "paired singleton-Lot percentile; fitted-model conditional"
+        },
+        "recall": {
+          "low": 0.057688258911085,
+          "high": 0.12007420494699646,
+          "resamples": 500,
+          "method": "paired singleton-Lot percentile; fitted-model conditional"
+        },
+        "false_positive_rate": {
+          "low": 0.0478236994384474,
+          "high": 0.06198014488865039,
+          "resamples": 500,
+          "method": "paired singleton-Lot percentile; fitted-model conditional"
+        }
+      },
+      "AP_delta_vs_constant_CI95": {
+        "low": -0.001526299476342854,
+        "high": 0.021586018942464622,
+        "resamples": 500,
+        "method": "paired singleton-Lot percentile; fitted-model conditional"
+      }
+    },
+    "rf": {
+      "evaluation": {
+        "n": 4000,
+        "fail_count": 273,
+        "threshold": 0.07540978269721343,
+        "average_precision": 0.06588831537979284,
+        "roc_auc": 0.48453125445344386,
+        "brier": 0.06362189882504729,
+        "fail_precision": 0.058823529411764705,
+        "fail_recall": 0.029304029304029304,
+        "fail_f1": 0.039119804400977995,
+        "accuracy": 0.90175,
+        "review_fraction": 0.034,
+        "tn": 3599,
+        "fp": 128,
+        "fn": 265,
+        "tp": 8,
+        "assumed_cost_5fn_1fp": 1453,
+        "false_positive_rate": 0.03434397638851623,
+        "false_alarms_per_1000_rows": 32.0
+      },
+      "CI95": {
+        "roc_auc": {
+          "low": 0.450463475049881,
+          "high": 0.5193215263603185,
+          "resamples": 500,
+          "method": "paired singleton-Lot percentile; fitted-model conditional"
+        },
+        "average_precision": {
+          "low": 0.05612230095211002,
+          "high": 0.07833880520211958,
+          "resamples": 500,
+          "method": "paired singleton-Lot percentile; fitted-model conditional"
+        },
+        "brier": {
+          "low": 0.05693290614160097,
+          "high": 0.0695556248114717,
+          "resamples": 500,
+          "method": "paired singleton-Lot percentile; fitted-model conditional"
+        },
+        "recall": {
+          "low": 0.011974900398406374,
+          "high": 0.048828626444159175,
+          "resamples": 500,
+          "method": "paired singleton-Lot percentile; fitted-model conditional"
+        },
+        "false_positive_rate": {
+          "low": 0.028664348777949253,
+          "high": 0.039850271340326156,
+          "resamples": 500,
+          "method": "paired singleton-Lot percentile; fitted-model conditional"
+        }
+      },
+      "AP_delta_vs_constant_CI95": {
+        "low": -0.008396948424487401,
+        "high": 0.008038876553332486,
+        "resamples": 500,
+        "method": "paired singleton-Lot percentile; fitted-model conditional"
+      }
+    },
+    "hgb": {
+      "evaluation": {
+        "n": 4000,
+        "fail_count": 273,
+        "threshold": 0.07354615198691929,
+        "average_precision": 0.06648985546815767,
+        "roc_auc": 0.48535486515094783,
+        "brier": 0.06361376931178606,
+        "fail_precision": 0.041666666666666664,
+        "fail_recall": 0.014652014652014652,
+        "fail_f1": 0.02168021680216802,
+        "accuracy": 0.90975,
+        "review_fraction": 0.024,
+        "tn": 3635,
+        "fp": 92,
+        "fn": 269,
+        "tp": 4,
+        "assumed_cost_5fn_1fp": 1437,
+        "false_positive_rate": 0.024684733029246043,
+        "false_alarms_per_1000_rows": 23.0
+      },
+      "CI95": {
+        "roc_auc": {
+          "low": 0.4508822771391763,
+          "high": 0.5196015497343519,
+          "resamples": 500,
+          "method": "paired singleton-Lot percentile; fitted-model conditional"
+        },
+        "average_precision": {
+          "low": 0.05783590767164049,
+          "high": 0.07717526847439209,
+          "resamples": 500,
+          "method": "paired singleton-Lot percentile; fitted-model conditional"
+        },
+        "brier": {
+          "low": 0.05692713880500737,
+          "high": 0.06955696153921896,
+          "resamples": 500,
+          "method": "paired singleton-Lot percentile; fitted-model conditional"
+        },
+        "recall": {
+          "low": 0.001522435897435902,
+          "high": 0.031314338235294115,
+          "resamples": 500,
+          "method": "paired singleton-Lot percentile; fitted-model conditional"
+        },
+        "false_positive_rate": {
+          "low": 0.019797691280299713,
+          "high": 0.029883093036352212,
+          "resamples": 500,
+          "method": "paired singleton-Lot percentile; fitted-model conditional"
+        }
+      },
+      "AP_delta_vs_constant_CI95": {
+        "low": -0.007611950414314637,
+        "high": 0.006747709636845168,
+        "resamples": 500,
+        "method": "paired singleton-Lot percentile; fitted-model conditional"
+      }
+    }
+  },
+  "simultaneous_detection": {
+    "SPC_proxy": {
+      "n": 4000,
+      "fail_count": 273,
+      "threshold": 0.5,
+      "average_precision": 0.24913919413919416,
+      "roc_auc": 0.5970695970695971,
+      "brier": 0.055,
+      "fail_precision": 1.0,
+      "fail_recall": 0.19413919413919414,
+      "fail_f1": 0.32515337423312884,
+      "accuracy": 0.945,
+      "review_fraction": 0.01325,
+      "tn": 3727,
+      "fp": 0,
+      "fn": 220,
+      "tp": 53,
+      "assumed_cost_5fn_1fp": 1100,
+      "false_positive_rate": 0.0,
+      "false_alarms_per_1000_rows": 0.0
+    },
+    "current_measurements_HGB": {
+      "n": 4000,
+      "fail_count": 273,
+      "threshold": 0.24192620792803002,
+      "average_precision": 0.9967159377993484,
+      "roc_auc": 0.9997513442643575,
+      "brier": 0.0032934527924357135,
+      "fail_precision": 0.928082191780822,
+      "fail_recall": 0.9926739926739927,
+      "fail_f1": 0.95929203539823,
+      "accuracy": 0.99425,
+      "review_fraction": 0.073,
+      "tn": 3706,
+      "fp": 21,
+      "fn": 2,
+      "tp": 271,
+      "assumed_cost_5fn_1fp": 31,
+      "false_positive_rate": 0.005634558626240944,
+      "false_alarms_per_1000_rows": 5.25
+    },
+    "current_HGB_CI95": {
+      "roc_auc": {
+        "low": 0.9995373156606246,
+        "high": 0.9998962381485432,
+        "resamples": 500,
+        "method": "paired singleton-Lot percentile; fitted-model conditional"
+      },
+      "average_precision": {
+        "low": 0.9940008437498667,
+        "high": 0.9986906241214458,
+        "resamples": 500,
+        "method": "paired singleton-Lot percentile; fitted-model conditional"
+      },
+      "brier": {
+        "low": 0.0021003845148644252,
+        "high": 0.004607807782941774,
+        "resamples": 500,
+        "method": "paired singleton-Lot percentile; fitted-model conditional"
+      },
+      "recall": {
+        "low": 0.9822992632132922,
+        "high": 1.0,
+        "resamples": 500,
+        "method": "paired singleton-Lot percentile; fitted-model conditional"
+      },
+      "false_positive_rate": {
+        "low": 0.003211540191579202,
+        "high": 0.00820670038338117,
+        "resamples": 500,
+        "method": "paired singleton-Lot percentile; fitted-model conditional"
+      }
+    },
+    "warning": "current measurements may encode supplied target rule; diagnostic association, NOT forecast"
+  },
+  "chosen_research_candidate": "logistic",
+  "selection_utility_passed": false,
+  "operational_model": null,
+  "model_verdict": "REJECTED_FOR_OPERATION",
+  "event_metrics": {
+    "event_recall": null,
+    "false_alarm_rate": null,
+    "detection_delay_seconds": null,
+    "reason": "Timestamp, Tool, Blade and cut/episode lineage absent; row false alarms are NOT event rate"
+  },
+  "bootstrap": "500 paired singleton-Lot percentile resamples; fitted-model conditional",
+  "threshold_policy": {
+    "assumed_FPR_cap": 0.05,
+    "assumed_review_cap": 0.1,
+    "deployment_enabled": false
+  },
+  "claims_file": "claims.json",
+  "protocol_sha256": "46f50f6117ed9d0bc1c562bd48e3d514af5026f4f2be187ebef1cf48cfa3f9c6"
+}

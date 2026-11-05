@@ -1,0 +1,31 @@
+[
+  {
+    "id": "C1",
+    "claim": "현재 데이터에서 운영용 미래 OOC 예측 유용성은 입증되지 않았다.",
+    "evidence": [
+      "audit.json metadata_missing",
+      "selection.json",
+      "results.json conditional_benchmark"
+    ],
+    "limitation": "chronology absent; conditional input acquisition unknown; synthetic target",
+    "alternative": "Missing inputs or synthetic generation can obscure real-world predictable mechanisms."
+  },
+  {
+    "id": "C2",
+    "claim": "Xbar/Range 동시점 진단은 미래 예측이 아니다.",
+    "evidence": [
+      "results.json simultaneous_detection"
+    ],
+    "limitation": "supplied label rule undocumented; target-proxy encoding possible",
+    "alternative": "Observed association may reflect label construction rather than physical cause."
+  },
+  {
+    "id": "C3",
+    "claim": "BG–SAW ID 및 동일 측정값 연결은 확인; 물리적 순서/인과는 미확인.",
+    "evidence": [
+      "audit.json BG_link"
+    ],
+    "limitation": "No cut/chip/time/unit calibration lineage",
+    "alternative": "shared synthetic table can create exact matching without real process ancestry."
+  }
+]

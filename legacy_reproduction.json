@@ -1,0 +1,78 @@
+{
+  "cv_scores": {
+    "v2_rf_3params_plus_BG": [
+      0.4995813148482856,
+      0.529679961394477,
+      0.48397349899898867,
+      0.48926210181911817,
+      0.513204798957415
+    ],
+    "v2_logistic_global_scaling_legacy_only": [
+      0.5026482327260433,
+      0.5193740165567373,
+      0.5154613743290963,
+      0.5354806181208113,
+      0.4974628269503504
+    ],
+    "v2_logistic_fold_local_correction": [
+      0.5026472498970487,
+      0.5193779478727159,
+      0.5154584258421124,
+      0.5354894635817631,
+      0.49746479260833976
+    ]
+  },
+  "mean_auc": {
+    "v2_rf_3params_plus_BG": 0.5031403352036569,
+    "v2_logistic_global_scaling_legacy_only": 0.5140854137366078,
+    "v2_logistic_fold_local_correction": 0.514087575960396
+  },
+  "reported_auc_0_5058_difference": -0.002659664796343164,
+  "plot_roc_actual_auc": 0.4905624608882858,
+  "plot_roc_hardcoded_label": 0.505,
+  "global_IC_3sigma": {
+    "reference_n": 18635,
+    "official": false,
+    "method": "fit supplied-IC mean +/- 3 sample SD; NOT formal Xbar-R",
+    "SAW_Xbar_um": {
+      "mean": 100.40132777032466,
+      "sd": 0.7539339951441123,
+      "lower": 98.13952578489231,
+      "upper": 102.663129755757
+    },
+    "SAW_Range_um": {
+      "mean": 0.8859754225918971,
+      "sd": 0.48252153574091367,
+      "lower": 0,
+      "upper": 2.333540029814638
+    }
+  },
+  "global_IC_3sigma_vs_status": {
+    "n": 20000,
+    "fail_count": 1365,
+    "threshold": 0.5,
+    "average_precision": 0.23002637362637363,
+    "roc_auc": 0.5868131868131868,
+    "brier": 0.0564,
+    "fail_precision": 1.0,
+    "fail_recall": 0.17362637362637362,
+    "fail_f1": 0.2958801498127341,
+    "accuracy": 0.9436,
+    "review_fraction": 0.01185,
+    "tn": 18635,
+    "fp": 0,
+    "fn": 1128,
+    "tp": 237,
+    "assumed_cost_5fn_1fp": 5640,
+    "false_positive_rate": 0.0,
+    "false_alarms_per_1000_rows": 0.0
+  },
+  "unexplained_ooc_count": 1128,
+  "warnings": [
+    "Legacy only: full data IC limits contaminate evaluation reference.",
+    "Global scaling violates fold-local preprocessing; corrected result reported separately.",
+    "BG after feature process-order availability unverified.",
+    "Plot legend hard-coded AUC; missing sensor cause was not established.",
+    "Lot/row sequence is not time; arbitrary first1000 RUL/90% threshold not validated."
+  ]
+}
