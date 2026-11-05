@@ -3,7 +3,7 @@
   "source_report": "ii_saw_analysis_output\\artifacts\\index.html",
   "source_report_sha256": "d3830021f4f1bb5ce2d662000013c3ca0c1045aedb9378fae628f31d01b8f782",
   "frozen_results_sha256": "d65dd23e2c37b5b213c393f564895d626029f634e3accd48d69bca69400470d8",
-  "entrypoint_sha256": "8ca28cf0763f8fa12b802f6d9ff183c182c322083ba222b7da2bfd04984edf74",
+  "entrypoint_sha256": "50aa58b8bb730c6f12dbb135ed2c85ac3e1a5a6257c6ba811235b32abede7dc6",
   "evidence_files": [
     "SENSOR_PLAN.md",
     "audit.json",
@@ -23,5 +23,6 @@
     "photo_zoom": "retained"
   },
   "static_qa": "PASS",
-  "prior_commit": "f35992a4bda49a5b7dee1ebd23222811e6b29296"
+  "prior_commit": "f35992a4bda49a5b7dee1ebd23222811e6b29296",
+  "hash_encoding": "UTF-8 / LF; compared against committed Git object and live HTTP response"
 }
